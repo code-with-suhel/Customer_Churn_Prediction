@@ -1,6 +1,6 @@
 # Customer Churn Prediction using Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 
 Customer churn is a major challenge for businesses, as losing existing customers can directly impact revenue and growth.
 
@@ -15,7 +15,7 @@ Since identifying potential churners is the primary objective, I focused particu
 
 ---
 
-## 🎯 Why Recall Matters in This Project
+## Why Recall Matters in This Project
 
 For a churn prediction problem, a **False Negative** occurs when:
 
@@ -31,7 +31,7 @@ Therefore, instead of focusing only on overall accuracy, I prioritized **Recall 
 
 ---
 
-## ⚠️ Initial Problem: Low Recall
+## Initial Problem: Low Recall
 
 After training the initial model, the Recall for **Class 1 (Churn)** was approximately:
 
@@ -59,7 +59,7 @@ This resulted in better detection of customers belonging to the churn class and 
 
 ---
 
-## 📈 Model Improvement
+## Model Improvement
 
 ### Before Handling Class Imbalance
 
@@ -83,7 +83,7 @@ This improvement is especially important from a business perspective because ide
 
 ---
 
-## 🧠 Key Learning
+## Key Learning
 
 This project demonstrates why **accuracy alone is not always the best metric for evaluating a classification model**.
 
@@ -92,35 +92,3 @@ The appropriate evaluation metric depends on the business problem.
 For customer churn prediction, missing an actual churner can be more costly than incorrectly flagging a non-churn customer as a potential churner.
 
 Therefore, **Recall for the churn class** was treated as one of the most important evaluation metrics in this project.
-
----
-
-## 🔍 Evaluation Metrics
-
-The model was evaluated using:
-
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
-
-Special attention was given to:
-
-**Recall for Class 1 (Churn)**
-
-because the main objective of the model is to identify as many potential churners as possible.
-
----
-
-## 🚀 Conclusion
-
-The initial model achieved a Recall of only **0.41 for the churn class**, mainly due to class imbalance in the dataset.
-
-After addressing the imbalance and retraining the model, the model's ability to identify churn customers improved.
-
-This project highlights an important Machine Learning lesson:
-
-> **A good model is not simply the one with the highest accuracy — it is the one whose performance aligns with the actual business objective.**
-
-In this case, improving Recall for churn customers makes the model more useful for real-world customer retention strategies.
